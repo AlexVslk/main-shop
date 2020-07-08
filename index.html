@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geek shop</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/javascript" href="css/normalize.css" />
+    <link rel="shortcut icon" type="image/png" href="i/geek/favikon.ico"/>
+    <link rel="stylesheet" type="text/javascript" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header-wrapper">
+        <div class="sandwich">
+          <div class="sandwich__wrapper" id="menu">
+            <div class="sandwich__top">
+              <div class="sandwich__top_menu">
+                <a href="#" class="sandwich__top_link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30px"
+                    height="30px"
+                  >
+                    <use xlink:href="i/geek/close.svg#menu" />
+                  </svg>
+                </a>
+              </div>
+              <div class="sandwich__top_cart">
+                <a href="#" >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30px"
+                    height="30px"
+                  >
+                    <use xlink:href="i/geek/cart-menu.svg#menu" />
+                  </svg>
+                </a>
+                <span class="cart-grey"></span>
+              </div>
+            </div>
+            <div class="sandwich__title">CATALOG</div>
+            <div class="sandwich__categories">
+              <div class="sandwich__categories_pc">
+                <a href="#" class="">
+                  <img src="i/geek/sandwich-pc.png" class="sandwich__image_pc" />
+                </a>
+              </div>
+              <div class="sandwich__categories_rog ">
+                <a href="#" class="">
+                  <img src="i/geek/sandwich-rog.png" class="sandwich__image_rog" />
+                </a>
+              </div>
+              <div class="sandwich__categories_stool">
+                <a href="#" class="">
+                  <img src="i/geek/sandwich-stool.png" class="sandwich__image_stool" />
+                </a>
+              </div>
+              <div class="sandwich__categories_ps">
+                <a href="#" class="">
+                  <img src="i/geek/sandwich-ps.png" class="sandwich__image_ps" />
+                </a>
+              </div>
+              <div class="sandwich__categories_ear">
+                <a href="#" class="">
+                  <img src="i/geek/sandwich-ear.png" class="sandwich__image_ear" />
+                </a>
+              </div>
+              <div class="sandwich__categories_pad">
+                <a href="#" class="">
+                  <img src="i/geek/sandwich-pad.png" class="sandwich__image_pad" />
+                </a>
+              </div>
+            </div>
+            <div class="sandwich_footer">
+              <div class="sandwich_footer__item">
+                <a href="#" class="sandwich_footer__link sandwich_footer__link-new">HOT AND NEW<span class="sandwich_footer__number">3</span></a>
+              </div>
+              <div class="sandwich_footer__item">
+                <a href="#" class="sandwich_footer__link">ACCOUNT</a>
+              </div>
+              <div class="sandwich_footer__item">
+                <a href="#" class="sandwich_footer__link">DISCOUNT CLUB</a>
+              </div>
+              <div class="sandwich_footer__item">
+                <a href="#" class="sandwich_footer__link">FOLOW US</a>
+              </div>
+              <div class="sandwich_footer__item">
+                <a href="#" class="sandwich_footer__link">CONTACTS</a>
+              </div>
+              <div class="sandwich_footer__item">
+                <a href="#" class="sandwich_footer__link">SUPPORT</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-top">
+          <div class="header-top__wrapper">
+          <div class="header-top__menu">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="44px"
+                height="44px"
+              >
+                <use xlink:href="i/geek/logo_menu.svg#menu" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="header-top__catalog">
+            <a href="#" class="header-top__catalog_item"
+              >CATALOG</a
+            >
+          </div>
+
+          <div class="header-top__new">
+            <a href="#marquee" class="header-top__new_item">HOT AND NEW</a>
+            <span class="number">3</span>
+          </div>
+
+          <div class="header-top__logo">
+            <a href="#" class="header-top__logo_img">
+              <img src="i/geek/logo.png" class="header-top__logotype" />
+            </a>
+          </div>
+
+          <div class="header-top__person">
+            <a href="#" class="header-top__person_item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="44px"
+                height="44px"
+              >
+                <use xlink:href="i/geek/person.svg#menu" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="header-top__cart">
+            <a href="#" class="header-top__cart_item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="44px"
+                height="44px"
+              >
+                <use xlink:href="i/geek/cart.svg#menu" />
+              </svg>
+            </a>
+            <span id="poni" class="poni"></span>
+          </div>
+        </div>
+        </div>
+
+        <div class="cart-box" id="cart">
+          <div class="cart-box_wrapper">
+            <div class="cart-box_top">
+            <span class="cart-box_close"><div class="cart-box_close__item">x</div></span>
+            
+            <div class="cart-items">
+            </div>
+            <div class="cart-box_text "><span>Total</span><span id="sum" class="cart-box_total cart-total-price">0</span></div>
+            
+          </div>
+            <div class="cart-box_footer">
+              <button class="cart-box_btn btn-purchase">CHECKOUT</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="wrapper_main">
+        <div class="pc">
+          <div class="pc_wrapper">
+            <div class="pc_wrapper__image">
+              <img class="pc_image" src="i/geek/pc.png" />
+            </div>
+            <div class="pc_text">
+              <h3 class="pc__title">
+                Complete your perfect equipment
+              </h3>
+
+              <div class="pc__description">
+                Build the most powerful PC with unique features depending on
+                your personal needs
+              </div>
+
+              <button class="pc__btn">SHOW MORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="laptop">
+          <div class="laptop_wrapper">
+            <div class="laptop_wrapper__image">
+              <img class="laptop_image" src="i/geek/laptop_desktop.png" />
+            </div>
+            <div class="laptop__text">
+              <h3 class="laptop__title">
+                Improve your mobility
+              </h3>
+              <div class="laptop__description">
+                Play on a powerful laptop anytime, anywhere
+              </div>
+
+              <button class="laptop__btn">SHOW MORE</button>
+
+          
+            </div>
+          </div>
+        </div>
+        <div class="text_block">
+          <div class="text_block__wrapper">
+          <h4 class="text_block__title">
+            4K games and entertainment
+          </h4>
+          <p class="text_block__description">
+            Play the latest PlayStation hits and exclusives in stunning 4K
+            resolution and stream your favorite game scenes in incredible detail
+            on 4K-enabled video services.
+          </p>
+        </div>
+        </div>
+        <div class="ps">
+          <div class="ps_wrapper">
+            <div class="ps_image__wrapper">
+              <img class="ps_image" src="i/geek/ps.png" />
+              <img class="ps_image__tablet" src="i/geek/ps_tablet.png" />
+              <img class="ps_image__desktop" src="i/geek/ps_desktop.png" />
+            </div>
+            <div class="ps__text">
+              <h3 class="ps__title">Feel the power of Pro</h3>
+              <p class="ps__description">
+                Enhance your game with our most powerful PlayStation game
+                console
+              </p>
+              <button class="ps__btn">SHOW MORE</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="products_text">
+          <h3 class="products_text__title">Get more joy</h3>
+          <p class="products_text__description">
+            Complete your equipment with top accessories
+          </p>
+        </div>
+        <div class="bg-products">
+          <div class="wrapper_products">
+            <div class="grid key">
+              <div class="prod-picture">
+                <img src="i/geek/key.png" class="key_image" />
+              </div>
+              <div class="key_text">
+                <h3 class="key__title shop-item-title">Logitech G613</h3>
+
+                <div class="key__buttons">
+                  <button data-src="i/geek/key.png" class="key__buttons_black key__button" ></button>
+                </div>
+
+                <p class="key__description">
+                  Logitech G613 Wireless Gaming! Type: Mechanical. Form Factor:
+                  Full-size. Connection: Wireless.
+                </p>
+                <div class="key__price">
+                  <div class="key__price_value shop-item-price">$142.29</div>
+                  <button data-price="142.29" id="increment" class="key__price_btn toggle shop-item-button">BUY NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="grid headset">
+              <div class="prod-picture">
+                <img src="i/geek/headset.png" class="headset_image" />
+              </div>
+              <div class="headset_text">
+                <h3 class="headset__title shop-item-title">Wireless headset</h3>
+
+                <div class="headset__buttons">
+                  <button data-src="i/geek/headset.png" class="headset__buttons_black headset__button" ></button>
+                  <button data-src="i/geek/headset-pink.png" class="headset__buttons_pink headset__button" ></button>
+                </div>
+
+
+                <p class="headset__description">
+                  Discover new dimensions in game sound with a professional
+                  wireless headset (Platinum) that uses 3D sound technology...
+                </p>
+                <div class="headset__price">
+                  <div class="headset__price_value shop-item-price">$199.95</div>
+                  <button data-price="199.95" id="increments" class="headset__price_btn toggle shop-item-button">BUY NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="grid stool">
+              <div class="prod-picture">
+                <img src="i/geek/stool.png" class="stool_image" />
+              </div>
+              <div class="stool_text">
+                <h3 class="stool__title shop-item-title">Gaming Chair</h3>
+                <div class="stool__buttons">
+                  <button data-src="i/geek/stool-black.png" class="stool__buttons_black hit" ></button>
+                  <button data-src="i/geek/stool-green.png" class="stool__buttons_green hit" ></button>
+                  <button data-src="i/geek/stool-blue.png" class="stool__buttons_blue hit" ></button>
+                  <button data-src="i/geek/stool-red.png" class="stool__buttons_red hit" ></button>
+                  <button data-src="i/geek/stool.png" class="stool__buttons_white hit" ></button>
+                </div>
+                <p class="stool__description">
+                  This Homall Gaming Chair extends the full length of the back
+                  with support for the shoulders, head, and neck.
+                </p>
+                <div class="stool__price">
+                  <div class="stool__price_value shop-item-price">$179.99</div>
+                  <button data-price="179.99" id="incrementa" class="stool__price_btn toggle shop-item-button">BUY NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="grid ps4">
+              <div class="prod-picture">
+                <img src="i/geek/ps4.png" class="ps4_image" />
+              </div>
+              <div class="ps4_text">
+                <h3 class="ps4__title shop-item-title">PS4 PRO</h3>
+
+                <div class="ps4__buttons">
+                  <button data-src="i/geek/ps4.png" class="ps4__buttons_black ps4__button" ></button>
+                  <button data-src="i/geek/ps4-white.png" class="ps4__buttons_white ps4__button" ></button>
+                </div>
+
+                <p class="ps4__description">
+                  Play the latest PlayStation hits and exclusives in stunning 4K
+                  resolution and stream your favorite game scenes in incredible
+                  detail.
+                </p>
+                <div class="ps4__price">
+                  <div class="ps4__price_value shop-item-price">$569.59</div>
+                  <button data-price="569.59" id="incrementd" class="ps4__price_btn toggle shop-item-button">BUY NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="grid rog">
+              <div class="prod-picture">
+                <img src="i/geek/rog.png" class="rog_image" />
+              </div>
+              <div class="rog_text">
+                <h3 class="rog__title shop-item-title">ASUS ROG</h3>
+
+                <div class="rog__buttons">
+                  <button data-src="i/geek/rog-black.png" class="rog__buttons_black rog__button" ></button>
+                  <button data-src="i/geek/rog.png" class="rog__buttons_white rog__button" ></button>
+                </div>
+
+                <p class="rog__description">
+                  Screen 15.6 "IPS (1920x1080) Full HD, matte / Intel Core
+                  i5-8300H (2.3 - 4.0 GHz) / RAM 8 GB / SSD 256 GB / nVidia
+                  GeForce...
+                </p>
+                <div class="rog__price">
+                  <div class="rog__price_value shop-item-price">$569.59</div>
+                  <button data-price="569.59" id="incrementc" class="rog__price_btn toggle shop-item-button">BUY NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="grid pad">
+              <div class="prod-picture">
+                <img src="i/geek/pad.png" class="pad_image" />
+              </div>
+              <div class="pad_text">
+                <h3 class="pad__title shop-item-title">DUALSHOCK 4</h3>
+
+                <div class="pad__buttons">
+                  <button data-src="i/geek/pad-black.png" class="pad__buttons_black pad__button" ></button>
+                  <button data-src="i/geek/pad.png" class="pad__buttons_pink pad__button" ></button>
+                </div>
+
+                <p class="pad__description">
+                  Get 50% off on second gamepad in pink or black!
+                </p>
+                <div class="pad__price">
+                  <div class="pad__price_value shop-item-price">$24.99</div><span class="pad__price_value">*</span>
+                  <button data-price="24.99" id="incrementb" class="pad__price_btn toggle shop-item-button">BUY NOW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="marquee" id="marquee">
+          <span class="marquee1"
+            >HOT AND NEW <span class="pink">HOT AND NEW</span> HOT AND NEW</span
+          >
+        </div>
+        <div id="slider">
+          <img src="i/geek/slide1.png" class="" />
+          <img src="i/geek/slide2.png" class="" />
+          <img src="i/geek/slide3.png" class="" />
+        </div>
+
+        <div class="form">
+          <h3 class="form__title">
+            WELCOME TO
+            <p class="form__title_item">DISCOUNT CLUB</p>
+          </h3>
+          <div class="form__dscrptn_wrapper">
+            <p class="form__dscrptn">
+              SUBSCRIBE on our latest news and get bonuses on your account. Use
+              bonuses when buying an awesome equipment.
+            </p>
+          </div>
+          <form id="myform" name="loginform" autocomplete="off">
+            <div class="form__group">
+              <label for="login" class="label-control"></label>
+              <input
+                type="text"
+                class="form_control"
+                name="first_name"
+                placeholder="ENTER YOUR FIRST NAME"
+              />
+            </div>
+
+            <div class="form__group">
+              <label for="email"></label>
+              <input
+                type="text"
+                class="form_control"
+                name="email"
+                placeholder="ENTER YOUR EMAIL"
+              />
+            </div>
+            <div class="form__dscrptn_wrapper">
+              <input type="checkbox" name="terms" class="form__checkbox" id="terms"/>
+              <label for="terms" class="form__dscrptn">
+                I authorize the use of personal data for the purpose of sending
+                news about promotions and discounts, as well as for use in my
+                personal account for calculating bonuses according to Terms and
+                Conditions.
+              </label>
+            </div>
+            <div class="form-group">
+              <input
+                class="form_btn"
+                id="form_btn"
+                type="submit"
+                value="SUBSCRIBE!"
+              />
+            </div>
+          </form>
+        </div>
+      </main>
+
+      <footer>
+        <aside class="footer__social">
+          <h4 class="footer__social_title">FOLLOW US</h4>
+          <div class="footer__social_items">
+            <div>
+            <a href="#">
+                <div class="footer__social_logo youtube">
+                </div>
+            </a>
+            </div>
+            <div>
+            <a href="#">
+              <div class="footer__social_logo twitch">
+              </div>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <div class="footer__social_logo instagram">
+              </div>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <div class="footer__social_logo facebook">
+              </div>
+            </a>
+          </div>
+          </div>
+        </aside>
+        <nav>
+          <div class="footer">
+            <ul class="footer__item_list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">SUPPORT</a>
+                <ul class="footer__link_list">
+                  <li>
+                    <a href="#" class="footer__link_item">PRODUCT HELP</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footer__link_item">SERVICE & WARRANTY</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footer__link_item"
+                      >REGISTER YOUR BEATS</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="footer__link_item">UPDATE YOUR BEATS</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footer__link_item"
+                      >AUTHORIZED SERVICE PROVIDERS</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="footer__link_item">CONTACT SUPPORT</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footer__link_item"
+                      >INTERNATIONAL NUMBERS</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">COMPANY</a>
+                <ul class="footer__link_list">
+                  <li>
+                    <a href="#" class="footer__link_item">PRODUCT HELP</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footer__link_item">NEWS AND EVENTS</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footer__link_item">PROMOTION TERMS</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footer__link_item">PRIVACY POLICY</a>
+                  </li>
+                  <li><a href="#" class="footer__link_item">TRADEMARK</a></li>
+                  <li>
+                    <a href="#" class="footer__link_item">TERMS OF USE</a>
+                  </li>
+                  <li><a href="#" class="footer__link_item">COOKIES</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/cart.js" async></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
